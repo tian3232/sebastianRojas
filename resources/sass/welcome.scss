@@ -1,0 +1,279 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  font-family: "Lato", sans-serif;
+}
+.navbar {
+    background: $black;
+    .navbar-brand {
+      margin-left: 1.5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $orange;
+      .text-orange {
+        color: $white;
+      }
+      &:hover {
+        .text-orange {
+          color: $orange;
+        }
+        color: $white;
+      }
+    }
+    .nav-link {
+      color: $white;
+      font-family: "Lato", sans-serif;
+      font-style: bold;
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+  .navbar-nav {
+    margin-left: auto; 
+    margin-right: 2.0rem;
+  }
+
+  .hero {
+    background: url('img/naruto.jpg') no-repeat center center;
+    background-size: cover;
+    color: $white;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    padding: 100px 0;
+  
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-style: bold;
+      color: $white;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+      color: $orange;
+    }
+  
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .character{
+    padding: 60px 0;
+    background-color: #000000;
+  }
+  .character-group {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: $black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .character-group img {
+    margin-right: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  .character-group div {
+    max-width: 600px;
+  }
+  .character-group h3 {
+    margin-bottom: 20px;
+    color: #ff6600;
+    font-weight: bold;
+  }
+  .character-group p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  .character-group p strong {
+    color: $white;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    color: $orange;
+  } 
+  .card {
+    background-color: $black;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .card img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    height: 200px;
+  }
+  .card h5 {
+    color: $orange;
+  }
+  .card-body {
+    flex: 1;
+  }
+  .btn-custom {
+    background-color: $orange;
+    color: $white;
+    align-items: right;
+  }
+  .btn-custom:hover {
+    background-color: $white;
+    color: $orange;
+  }
+  
+
+  .news {
+    padding: 60px 0;
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+  
+    .news-item {
+      margin-bottom: 20px;
+  
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: $orange;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: $white;
+      }
+    }
+
+  }
+  .gallery {
+    padding: 60px 0;
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+  
+    .carousel-item {
+      img {
+        max-width: 100%;
+        height: 700px; /* Ajusta la altura según sea necesario */
+        object-fit: cover; /* Ajusta la imagen para que cubra el área del contenedor */
+        border-radius: 10px;
+      }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: $orange;
+      border-radius: 50%;
+    }
+  }
+
+  footer {
+    background-color: $black;
+    color: $white;
+    padding: 20px 0;
+    text-align: center;
+  
+    .social-links {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        display: inline;
+        margin: 0 10px;
+  
+        a {
+          color: $white;
+          text-decoration: none;
+          
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+
+.principal{
+  img{
+    height: 100%;
+    object-fit: cover;
+  }
+  p{
+    color: $white;
+  }
+}
+
+.habilidades{ 
+  h3{
+    color: $orange;
+  }
+  p{
+    color: $white;
+  }
+}
+.destacados{
+  h3{
+    color: $orange;
+  }
+  strong{
+    color: $orange;
+  }
+  p{
+    color: $white;
+  }
+}
+
+.inicio{
+  p{
+    color: $white;
+    text-align: center;
+  }
+}
+
+.boruto{
+  h3{
+    color: $orange;
+  }
+  p{
+    color: $white;
+  }
+}
+
+.sarada{
+  h3{
+    color: $orange;
+  }
+  p{
+    color: $white;
+  }
+}
+
+.himawari{
+  h3{
+    color: $orange;
+  }
+  p{
+    color: $white;
+  }
+}
